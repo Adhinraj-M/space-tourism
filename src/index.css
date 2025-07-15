@@ -1,0 +1,30 @@
+:root{
+  --dark-blue:#0B0D17;
+  --light-blue:#D0D6F9;
+  --white:#ffffff;
+
+}
+
+@font-face {
+  font-family: 'Barlow Condensed';
+  src: url('../src/assets/Fonts/Barlow_Condensed/BarlowCondensed-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Barlow Regular';
+  src: url('../src/assets/Fonts/Barlow_Condensed/BarlowCondensed-Medium.ttf');
+}
+
+@font-face {
+  font-family: 'Bellefair Regular' ;
+  src: url('../src/assets/Fonts/Bellefair/Bellefair-Regular.ttf');
+}
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+
+

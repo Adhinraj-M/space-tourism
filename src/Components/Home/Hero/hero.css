@@ -1,0 +1,85 @@
+.sub-container {
+  padding: 24px;
+}
+
+.hero-content-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  text-align: center;
+  color: var(--white);
+  margin-bottom: 30px;
+}
+
+.hero-content-container .top-text {
+  margin: 0;
+  font-size: 19px;
+  letter-spacing: 3px;
+  font-family: "barlow Condensed";
+  color: var(--light-blue);
+}
+
+.hero-content-container .middle-text {
+  font-family: "Bellefair Regular";
+  font-size: 80px;
+  letter-spacing: 0;
+  font-weight: 300;
+  margin: 0;
+}
+
+.hero-content-container .last-paragraph {
+  margin: 0;
+  font-family: "Barlow", sans-serif;
+  line-height: 180%;
+  letter-spacing: 0;
+  font-size: 15px;
+  font-weight: 100;
+  text-align: center;
+}
+.explore-btn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 384px;
+  /* width: 384px; */
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.explore-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: rgb(180, 175, 175);
+  opacity: 0;
+  transition: opacity 0.3s ease-in;
+
+}
+
+.explore-btn.mouse-enter::before {
+  opacity: 0.2;
+}
+
+.explore {
+  background-color: var(--white);
+  border-radius: 50%;
+  width: 144px;
+  height: 144px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 1;
+  transition: 0.3s ease;
+}
+
+.explore-text {
+  font-family: "Bellefair Regular";
+  font-size: 18px;
+}
+

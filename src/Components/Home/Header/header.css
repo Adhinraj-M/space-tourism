@@ -1,0 +1,33 @@
+.header-container {
+  background: transparent;
+  width: 100%;
+  display: flex;
+  padding-block: 24px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 24px;
+  column-gap: 64px;
+}
+
+.logo-container .logo {
+  width: 40px;
+  height: 40px;
+}
+
+.mobile-menu-icon {
+  display: flex;
+  padding-right: 24px;
+  justify-content: flex-end;
+  cursor: pointer;
+}
+
+.mobile-menu-icon .menu-icon {
+  width: 24px;
+  height: 21px;
+}
+
