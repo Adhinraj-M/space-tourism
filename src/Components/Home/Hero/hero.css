@@ -1,5 +1,8 @@
-.sub-container {
+.hero-container {
   padding: 24px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
 
 .hero-content-container {
@@ -83,3 +86,52 @@
   font-size: 18px;
 }
 
+@media screen and (min-width:748px){
+  .hero-container{
+    padding: 128px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* gap: 10px; */
+    overflow-y: hidden;
+  }
+
+  .sub-container{
+    padding: 0;
+  }
+  
+  .hero-content-container .top-text {
+    font-size: 16px;
+    letter-spacing: 15%;
+  }
+
+  .hero-content-container{
+    justify-content: center;
+    max-width: 540px;
+  }
+  
+.hero-content-container .middle-text {
+  font-size: 144px;
+}
+
+.explore-btn{
+  width: auto;
+  height: auto;
+}
+
+.explore {
+ width: 272px;
+ height: 272px;
+}
+
+/* .explore-btn:hover{
+  width: 512px;
+  height: 512px;
+
+} */
+
+.explore-text{
+  font-size: 32px;
+}
+
+}

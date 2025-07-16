@@ -53,7 +53,16 @@
   font-weight: 600;
   font-size: 18px;
   display: flex;
+  position: relative;
+  margin-right: 41px;
 }
+
+.navigation-state:hover{
+  color: var(--white);
+  border-right: 3px solid rgb(245, 243, 243);
+  transition: border-right 0.1s ease;
+}
+
 
 .menu-name {
   color: var(--white);
