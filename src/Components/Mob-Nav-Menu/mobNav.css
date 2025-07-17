@@ -55,6 +55,7 @@
   display: flex;
   position: relative;
   margin-right: 41px;
+  text-decoration: none;
 }
 
 .navigation-state:hover{

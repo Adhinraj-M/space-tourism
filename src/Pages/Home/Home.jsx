@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react";
-import Hero from "../../Components/Home/Hero/Hero.jsx";
+import Hero from "../../Components/Hero/Hero.jsx";
 import "../Home/home.css";
 import bgMob from "../../assets/home/background-home-mobile.jpg";
 import bgTab from "../../assets/home/background-home-tablet.jpg";
 import bgDesktop from "../../assets/home/background-home-desktop.jpg";
 import WindowWidth from "../../Resize/WindowWidth.js";
-import MobHeader from "./MobHeader/MobHeader.jsx";
-import Header from "./Header/Header.jsx";
+import MobHeader from "../../Components/MobHeader/MobHeader.jsx";
+import Header from "../../Components/Header/Header.jsx";
 
 function Home() {
   const [background, setBackground] = useState(bgMob);

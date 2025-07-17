@@ -1,6 +1,5 @@
 .nav-bar {
   display: flex;
-  height: 96px;
   align-items: center;
 }
 
@@ -19,7 +18,7 @@ img.logo {
   margin: 0;
   list-style-type: none;
   width: 100%;
-  height: 100%;
+  height: 96px;
   align-items: center;
   justify-content: space-evenly;
 }
@@ -35,6 +34,7 @@ img.logo {
   display: flex;
   gap: 12px;
   height: 100%;
+  text-decoration: none;
   align-items: center;
 }
 
@@ -57,13 +57,9 @@ img.logo {
     padding-top: 64px;
     display: flex;
     width: 100%;
+    height: 136px;
   }
   
-  .overlay{
-    height: 1px;
-    opacity: 25%;
-    background-color: red;
-  }
   .menu{
     padding-inline: 64px;
     margin-top: 40px;
@@ -72,6 +68,5 @@ img.logo {
     justify-content: flex-end;
     height: auto;
   }
-
 
 }

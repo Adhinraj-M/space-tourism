@@ -1,5 +1,6 @@
-import logo from '../../../assets/shared/logo.svg'
-import '../Header/header.css'
+import { Link } from 'react-router-dom'
+import logo from '../../assets/shared/logo.svg'
+import './header.css'
 
 function Header() {
   return (
@@ -8,13 +9,13 @@ function Header() {
             <img className='logo' src={logo} alt="logo"/>
         </div>
          <ul className="menu">
-        <li className="nav-state">
+        <Link to={'/'}  className="nav-state">
           {/* <span className="menu-no">00</span>HOME */}
           HOME
-        </li>
-        <li className="nav-state">
+        </Link>
+        <Link to={'/destination'} className="nav-state">
           <span className="menu-no">01</span>DESTINATION
-        </li>
+        </Link>
         <li className="nav-state" >
           <span className="menu-no">02</span>CREW
         </li>

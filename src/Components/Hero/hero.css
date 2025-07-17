@@ -1,8 +1,12 @@
 .hero-container {
   padding: 24px;
-  display: flex;
+  height:100%;
+}
+
+.sub-container{
+   display: flex;
   flex-direction: column;
-  flex: 1;
+  align-items: center;
 }
 
 .hero-content-container {
@@ -37,15 +41,14 @@
   letter-spacing: 0;
   font-size: 15px;
   font-weight: 100;
-  text-align: center;
 }
 .explore-btn {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 384px;
-  /* width: 384px; */
+  height: 327px;
+  width: 327px;
   border-radius: 50%;
   overflow: hidden;
 }
@@ -92,7 +95,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* gap: 10px; */
     overflow-y: hidden;
   }
 
@@ -108,30 +110,56 @@
   .hero-content-container{
     justify-content: center;
     max-width: 540px;
+    margin-bottom: 0;
   }
   
-.hero-content-container .middle-text {
-  font-size: 144px;
-}
+  .hero-content-container .middle-text {
+   font-size: 144px;
+  }
 
-.explore-btn{
-  width: auto;
-  height: auto;
-}
+  .explore-btn{
+   width: 480px;
+   height: 480px;
+  }
 
-.explore {
- width: 272px;
- height: 272px;
-}
+  .explore {
+   width: 272px;
+   height: 272px;
+  }
 
-/* .explore-btn:hover{
-  width: 512px;
-  height: 512px;
-
-} */
-
-.explore-text{
-  font-size: 32px;
-}
+  .explore-text{
+   font-size: 32px;
+  }
 
 }
+
+@media screen and (min-width:1024px){
+    .hero-container{
+      padding: 128px 0;
+      justify-content: flex-end;
+    }
+
+    .sub-container {
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-around;
+        margin: 0 auto;
+        position: absolute;
+        bottom: 65px;
+    }
+
+    .hero-content-container {
+      text-align: left;
+    }
+   
+     
+    
+}
+
+@media screen and (min-width: 1140px) {
+    .explore-btn {
+        right: -30px;
+        bottom: -18px;
+    }
+
+  }

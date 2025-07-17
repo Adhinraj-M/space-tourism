@@ -1,5 +1,5 @@
 import { useRef } from "react";
-import "../Hero/hero.css";
+import "./hero.css";
 
 function Hero() {
   const exploreCon = useRef(null);
