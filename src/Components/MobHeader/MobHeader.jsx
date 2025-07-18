@@ -1,6 +1,6 @@
 import "./Mobheader.css";
-import logo from "../../assets/shared/logo.svg";
-import menuLogo from "../../assets/shared/icon-hamburger.svg";
+import logo from "../../../public/assets/shared/logo.svg";
+import menuLogo from "../../../public/assets/shared/icon-hamburger.svg";
 import MobNav from "../Mob-Nav-Menu/MobNav";
 import { useState } from "react";
 import WindowWidth from "../../Resize/WindowWidth";

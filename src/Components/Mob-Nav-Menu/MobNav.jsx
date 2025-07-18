@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import closeBtn from "../../assets/shared/icon-close.svg";
+import closeBtn from "../../../public/assets/shared/icon-close.svg";
 import "./mobNav.css";
 
 function MobNav({ sideNav, setSideNav }) {

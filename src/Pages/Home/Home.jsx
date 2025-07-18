@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 import Hero from "../../Components/Hero/Hero.jsx";
 import "../Home/home.css";
-import bgMob from "../../assets/home/background-home-mobile.jpg";
-import bgTab from "../../assets/home/background-home-tablet.jpg";
-import bgDesktop from "../../assets/home/background-home-desktop.jpg";
+import bgMob from "../../../public/assets/home/background-home-mobile.jpg";
+import bgTab from "../../../public/assets/home/background-home-tablet.jpg";
+import bgDesktop from "../../../public/assets/home/background-home-desktop.jpg";
 import WindowWidth from "../../Resize/WindowWidth.js";
 import MobHeader from "../../Components/MobHeader/MobHeader.jsx";
 import Header from "../../Components/Header/Header.jsx";
@@ -26,8 +26,7 @@ function Home() {
   return (
     <div
       className="home-container"
-      style={{ backgroundImage: `url(${background})` }}
-    >
+      style={{ backgroundImage: `url(${background})` }}>
       {screenWidth > 748 ?  <Header/> : <MobHeader/>}
       <Hero />
     </div>

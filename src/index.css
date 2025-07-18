@@ -5,19 +5,21 @@
 
 }
 
+
+
 @font-face {
   font-family: 'Barlow Condensed';
-  src: url('../src/assets/Fonts/Barlow_Condensed/BarlowCondensed-Regular.ttf');
+  src: url('../public/assets/Fonts/Barlow_Condensed/BarlowCondensed-Regular.ttf');
 }
 
 @font-face {
   font-family: 'Barlow Regular';
-  src: url('../src/assets/Fonts/Barlow_Condensed/BarlowCondensed-Medium.ttf');
+  src: url('../public/assets/Fonts/Barlow/Barlow-Regular.ttf');
 }
 
 @font-face {
   font-family: 'Bellefair Regular' ;
-  src: url('../src/assets/Fonts/Bellefair/Bellefair-Regular.ttf');
+  src: url('../public/assets/Fonts/Bellefair/Bellefair-Regular.ttf');
 }
 
 body {
