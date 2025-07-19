@@ -21,9 +21,9 @@ function MobNav({ sideNav, setSideNav }) {
         <Link to={'/destination'} className="navigation-state" >
           <span className="menu-name">01</span>DESTINATION
         </Link>
-        <li className="navigation-state" >
+        <Link to={'/crew'} className="navigation-state" >
           <span className="menu-name">02</span>CREW
-        </li>
+        </Link>
         <li className="navigation-state" >
           <span className="menu-name">03</span>TECHNOLOGY
         </li>

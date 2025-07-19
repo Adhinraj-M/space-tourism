@@ -34,5 +34,34 @@
             "image":"/assets/destination/image-titan.png"
 
         }
+    ],
+    "crew":[
+        {
+            "id":"c1",
+            "crew_role":"COMMANDER",
+            "crew_name":"DOUGLAS HURLEY",
+            "about_crew":"Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA astronaut. He launched into space for the third time as commander of Crew Dragon Demo-2.",
+            "crew_img":"/assets/crew/image-douglas-hurley.png"
+        },{
+             "id":"c2",
+            "crew_role":"MISSION SPECIALIST",
+            "crew_name":"MARK SHUTTLEWORTH",
+            "about_crew":"Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind the Linux-based Ubuntu operating system. Shuttleworth became the first South African to travel to space as a space tourist.",
+            "crew_img":"/assets/crew/image-mark-shuttleworth.png"
+        },
+        {
+             "id":"c3",
+            "crew_role":"PIOLOT",
+            "crew_name":"VICTOR GLOVER",
+            "about_crew":"Pilot on the first operational flight of the SpaceX Crew Dragon to the International Space Station. Glover is a commander in the U.S. Navy where he pilots an F/A-18.He was a crew member of Expedition 64, and served as a station systems flight engineer. ",
+            "crew_img":"/assets/crew/image-victor-glover.png"
+        },{
+             "id":"c4",
+            "crew_role":"FLIGHT ENGINEER",
+            "crew_name":"ANOUSHEH ANSARI",
+            "about_crew":"Anousheh Ansari is an Iranian American engineer and co-founder of Prodea Systems. Ansari was the fourth self-funded space tourist, the first self-funded woman to fly to the ISS, and the first Iranian in space. ",
+            "crew_img":"/assets/crew/image-anousheh-ansari.png"
+        }
+
     ]
 }

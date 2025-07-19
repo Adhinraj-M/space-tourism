@@ -3,6 +3,9 @@ import logo from '../../../public/assets/shared/logo.svg'
 import './header.css'
 
 function Header() {
+
+  const navList = ['HOME',]
+
   return (
     <div className="nav-bar">
         <div className="logo-wrapper">
@@ -16,9 +19,9 @@ function Header() {
         <Link to={'/destination'} className="nav-state">
           <span className="menu-no">01</span>DESTINATION
         </Link>
-        <li className="nav-state" >
+        <Link to={'/crew'} className="nav-state" >
           <span className="menu-no">02</span>CREW
-        </li>
+        </Link>
         <li className="nav-state" >
           <span className="menu-no">03</span>TECHNOLOGY
         </li>

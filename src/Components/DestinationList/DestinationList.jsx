@@ -16,11 +16,23 @@ function DestinationList() {
       }
     }
     DataFetching();
+
   }, []);
 
-  const handleNavDest = (index) => {
-    setIndex(index);
+  const handleNavDest = (i) => {
+    setIndex(i);
   };
+
+  const len = 4
+
+  useEffect(()=>{
+
+    const interval = setInterval(()=>{
+      setIndex(prev=>( prev +1) % len)
+    },6000)
+    
+  return ()=> clearInterval(interval)
+  },[len])
 
   return (
     <>
@@ -38,18 +50,18 @@ function DestinationList() {
 
           <div className="content-wrapper">
             <div className="destination-list">
-              <p className="destination-name" onClick={() => handleNavDest(0)}>
-                {data[0]?.name}
-              </p>
-              <p className="destination-name" onClick={() => handleNavDest(1)}>
-                {data[1]?.name}
-              </p>
-              <p className="destination-name" onClick={() => handleNavDest(2)}>
-                {data[2]?.name}
-              </p>
-              <p className="destination-name" onClick={() => handleNavDest(3)}>
-                {data[3]?.name}
-              </p>
+              {data.map((item, i) => {
+                return (
+                  <div key={item.id}>
+                    <p
+                      className={`destination-name ${i == index ? 'active' : ''}`}
+                      onClick={() => handleNavDest(i)}
+                    >
+                      {item.name}
+                    </p>
+                  </div>
+                );
+              })}
             </div>
 
             <h1 className="current-dest-name">{data[index]?.name}</h1>

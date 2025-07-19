@@ -28,17 +28,18 @@ import DestinationList from "../../Components/DestinationList/DestinationList";
   return (
     <div
       className="main-container"
-      style={{ backgroundImage: `url(${bgImg})` }}
-    >
+      style={{ backgroundImage: `url(${bgImg})` }}>
       {screenwidth > 748 ? <Header /> : <MobHeader />}
       <div className="destination-hero">
         <div className="destination-sub">
           <p className="heading">
             <span className="dest-no">01</span>PICK YOUR DESTINATION
           </p>
-          <DestinationList />
+          <DestinationList/>
         </div>
       </div>
+
+
     </div>
   );
 }

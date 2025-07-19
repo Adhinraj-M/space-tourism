@@ -5,7 +5,9 @@
 
 }
 
-
+p{
+  margin: 0;
+}
 
 @font-face {
   font-family: 'Barlow Condensed';

@@ -1,0 +1,170 @@
+.crew-main-container {
+  height: 701px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  transition: 0.5s ease-in;
+}
+
+.crew-details {
+  padding-top: 40px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 350px;
+}
+
+.crew-role {
+  font-size: 18px;
+  font-family: "Bellefair Regular";
+  color: gray;
+}
+
+.crew-name {
+  font-family: "Bellefair Regular";
+  font-size: 24px;
+  color: var(--white);
+  margin-top: 8px;
+}
+
+.crew-description {
+  font-size: 15px;
+  margin-top: 24px;
+  line-height: 180%;
+  font-family: "Barlow Regular";
+  color: var(--light-blue);
+  flex: 1;
+}
+
+.slide-btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  height: 10px;
+  z-index: 10;
+  margin-top: 24px;
+}
+
+.slide-btn {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgb(139, 133, 133);
+  cursor: pointer;
+}
+
+.slide-btn:hover {
+  background-color: white;
+}
+
+.crew-img-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 0;
+  text-align: center;
+  height: 350px;
+}
+
+.crew-img {
+  width: auto;
+  max-height: 100%;
+  object-fit: contain;
+  mask-image: linear-gradient(to top, transparent 0%, black 20%, black 100%);
+}
+
+.slide-btn.active {
+  background-color: rgb(255, 255, 255);
+
+}
+
+@media screen and (min-width: 748px) {
+  .crew-main-container {
+    height: auto;
+  }
+
+  .crew-role {
+    font-size: 24px;
+  }
+
+  .crew-name {
+    font-size: 40px;
+  }
+
+  .crew-description {
+    font-size: 16px;
+    width: 512px;
+  }
+
+  .crew-img-container {
+    height: auto;
+  }
+
+  .crew-img {
+    height: 503px;
+  }
+
+  .crew-details {
+    height: 265px;
+    flex: unset;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .crew-main-container {
+    flex-direction: row;
+    max-width: 1100px;
+    height: 734px;
+    height: unset;
+    align-items: center;
+  }
+
+  .crew-role {
+    font-size: 32px;
+  }
+
+  .crew-name {
+    font-size: 56px;
+  }
+
+  .crew-description {
+    font-size: 18px;
+  }
+
+  .crew-details {
+    align-items: start;
+    text-align: start;
+    height: 350px;
+  }
+
+  .slide-btn-container {
+    gap: 40px;
+    height: 15px;
+    position: relative;
+    bottom: -35px;
+    left: 2px;
+  }
+
+  .slide-btn {
+    width: 15px;
+    height: 15px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .crew-img {
+    height: 676px;
+  }
+
+  .slide-btn-container {
+    gap: 40px;
+    height: 15px;
+    position: relative;
+    bottom: -100px;
+    left: 2px;
+  }
+}
