@@ -1,10 +1,23 @@
-import { Link } from 'react-router-dom'
+import { useLocation, useNavigate } from 'react-router-dom'
 import logo from '../../../public/assets/shared/logo.svg'
 import './header.css'
 
 function Header() {
+  
+  const navigate = useNavigate()
+  const location =useLocation()
 
-  const navList = ['HOME',]
+  const navList = ['home','destination','crew','technology']
+
+  const path = location.pathname === '/' ? 'home' : location.pathname.slice(1)
+  let active = navList.indexOf(path)
+
+ 
+  const handleNavigation = (index) => {
+    const path = navList[index]
+    
+       navigate(path === 'home'? '/': `/${path}`)
+  };
 
   return (
     <div className="nav-bar">
@@ -12,20 +25,14 @@ function Header() {
             <img className='logo' src={logo} alt="logo"/>
         </div>
          <ul className="menu">
-        <Link to={'/'}  className="nav-state">
-          {/* <span className="menu-no">00</span>HOME */}
-          HOME
-        </Link>
-        <Link to={'/destination'} className="nav-state">
-          <span className="menu-no">01</span>DESTINATION
-        </Link>
-        <Link to={'/crew'} className="nav-state" >
-          <span className="menu-no">02</span>CREW
-        </Link>
-        <li className="nav-state" >
-          <span className="menu-no">03</span>TECHNOLOGY
-        </li>
+         {       
+            navList.map((item,i)=>(
+            <li className={`nav-state ${active === i ? 'active':'' }`} key={item} onClick={()=>handleNavigation(i)}>
+              <span>0{i}</span>{item}
+            </li>
+         ))}
       </ul>
+
     </div>
   )
 }

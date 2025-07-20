@@ -36,6 +36,7 @@ img.logo {
   height: 100%;
   text-decoration: none;
   align-items: center;
+  text-transform: uppercase;
 }
 
 .nav-state:hover {
@@ -44,6 +45,10 @@ img.logo {
 
 .menu-no {
   font-weight: bold;
+}
+
+.active{
+  border-bottom: 3px solid white;
 }
 
 
