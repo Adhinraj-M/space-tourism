@@ -1,0 +1,69 @@
+.technology-main {
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: 0.7s;
+}
+
+.section-container {
+  padding: 24px 24px 48px 24px;
+}
+
+.tech-sub-container {
+  text-align: center;
+}
+
+.tech-heading {
+  color: var(--white);
+  font-family: "Barlow Condensed";
+  font-size: 18px;
+  margin-top: 0;
+  margin-bottom: 24px;
+  letter-spacing: 2px;
+}
+
+.tech-no {
+  color: gray;
+  font-weight: bold;
+  margin-right: 16px;
+}
+
+@media screen and (min-width: 748px) {
+  .tech-heading {
+    text-align: left;
+    margin-bottom: 64px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .section-container {
+    padding: 48px 0;
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    margin-left: 10px;
+  }
+
+  .tech-sub-container {
+    max-width: 1275px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tech-heading {
+    font-size: 28px;
+  }
+
+}
+
+@media  screen and (min-width:1440px) {
+    .section-container{
+        justify-content: center;
+        margin-left: 0;
+    }
+
+}

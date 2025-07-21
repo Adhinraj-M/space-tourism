@@ -5,7 +5,7 @@ import "./mobNav.css";
 function MobNav({ sideNav, setSideNav }) {
 
   return (
-    <div className={`mob-nav-container ${sideNav ? 'active' : ''}`} >
+    <nav className={`mob-nav-container ${sideNav ? 'active' : ''}`} >
       <div className="close-wrapper">
         <img
           src={closeBtn}
@@ -24,11 +24,11 @@ function MobNav({ sideNav, setSideNav }) {
         <Link to={'/crew'} className="navigation-state" >
           <span className="menu-name">02</span>CREW
         </Link>
-        <li className="navigation-state" >
+        <Link to={'/technology'} className="navigation-state" >
           <span className="menu-name">03</span>TECHNOLOGY
-        </li>
+        </Link>
       </ul>
-    </div>
+    </nav>
   );
 }
 

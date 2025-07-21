@@ -1,0 +1,163 @@
+
+
+.space-launch-content {
+  height: 677px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: center;
+}
+
+.space-img-container {
+  width: 100vw;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 64px;
+
+}
+
+.space-img {
+  width: 100vw;
+  height: 100%;
+  display: block;
+}
+
+.button-container {
+  display: flex;
+  gap: 16px;
+  height: 40px;
+  justify-content: center;
+  position: relative;
+}
+
+.button-container .btn {
+  height: 40px;
+  width: 40px;
+  background: transparent;
+  color: var(--white);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--white);
+  cursor: pointer;
+  font-family: "Bellefair Regular";
+}
+
+.button-container .btn:hover{
+    background-color: var(--white);
+    color: black;
+    transition: 0.2s;
+}
+
+.launch-info-container {
+  display: flex;
+  flex-direction: column;
+  color: var(--white);
+  margin-top: 40px;
+}
+
+.launch-info-container .technology-heading {
+  font-size: 18px;
+  font-family: "Bellefair Regular";
+  color: gray;
+}
+
+.launch-info-container .technology-name {
+  font-size: 24px;
+  margin-top: 18px;
+  font-family: "Bellefair Regular";
+  margin-bottom: 16px;
+}
+
+.launch-info-container .technology-description {
+  font-family: "Barlow Regular";
+  line-height: 180%;
+  font-size: 15px;
+}
+
+.btn.active{
+    background-color: var(--white);
+    color: black;
+}
+
+
+
+@media screen and (min-width: 748px) {
+  
+
+  .button-container {
+    height: 56px;
+  }
+
+  .button-container .btn {
+    width: 56px;
+    height: 56px;
+  }
+
+  .launch-info-container .technology-heading {
+    font-size: 24px;
+  }
+
+  .space-img {
+    object-fit: cover;
+  }
+
+  .launch-info-container .technology-name {
+    font-size: 40px;
+  }
+
+  .launch-info-container .technology-description {
+    font-size: 16px;
+  }
+
+  .launch-info-container {
+    width: 512px;
+  }
+  .space-img-container {
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+ 
+
+  .space-launch-content {
+    flex-direction: row-reverse;
+    height: auto;
+  }
+
+  .btn-info-container {
+    display: flex;
+  }
+
+  .button-container {
+    display: grid;
+    height: auto;
+    margin-right: 64px;
+    align-items: center;
+  }
+  .button-container .btn {
+    width: 70px;
+    height: 70px;
+  }
+
+  .launch-info-container{
+    text-align: left;
+  }
+
+  .space-img-container{
+    max-width: 608px; 
+  }
+}
+
+@media  screen and (min-width:1440px) {
+   
+
+     .button-container .btn {
+    width: 80px;
+    height: 80px;
+  }
+}

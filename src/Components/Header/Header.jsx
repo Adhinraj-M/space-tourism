@@ -5,7 +5,7 @@ import './header.css'
 function Header() {
   
   const navigate = useNavigate()
-  const location =useLocation()
+  const location =useLocation() 
 
   const navList = ['home','destination','crew','technology']
 
@@ -20,7 +20,7 @@ function Header() {
   };
 
   return (
-    <div className="nav-bar">
+    <header className="nav-bar">
         <div className="logo-wrapper">
             <img className='logo' src={logo} alt="logo"/>
         </div>
@@ -33,7 +33,7 @@ function Header() {
          ))}
       </ul>
 
-    </div>
+    </header>
   )
 }
 

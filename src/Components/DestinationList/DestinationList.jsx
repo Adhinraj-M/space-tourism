@@ -16,27 +16,25 @@ function DestinationList() {
       }
     }
     DataFetching();
-
   }, []);
 
   const handleNavDest = (i) => {
     setIndex(i);
   };
 
-  const len = 4
+  const len = 4;
 
-  useEffect(()=>{
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIndex((prev) => (prev + 1) % len);
+    }, 6000);
 
-    const interval = setInterval(()=>{
-      setIndex(prev=>( prev +1) % len)
-    },6000)
-    
-  return ()=> clearInterval(interval)
-  },[len])
+    return () => clearInterval(interval);
+  }, [len]);
 
   return (
     <>
-      {data && (
+      {!data ? (<div className="Loading">Loading...</div>): (
         <div className="destination">
           <div className="destination-img-container">
             <img
@@ -54,7 +52,9 @@ function DestinationList() {
                 return (
                   <div key={item.id}>
                     <p
-                      className={`destination-name ${i == index ? 'active' : ''}`}
+                      className={`destination-name ${
+                        i == index ? "active" : ""
+                      }`}
                       onClick={() => handleNavDest(i)}
                     >
                       {item.name}

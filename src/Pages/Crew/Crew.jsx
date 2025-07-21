@@ -24,7 +24,7 @@ function Crew() {
   }, [screenwidth]);
 
   return (
-    <div className="crew-container" style={{ background: `url(${bgImg})` }}>
+    <div className="crew-container" style={{ backgroundImage: `url(${bgImg})` }}>
       {screenwidth > 748 ? <Header /> : <MobHeader />}
       <div className="crew-wrapper">
         <div className="crew">
