@@ -9,11 +9,11 @@ function CrewList() {
     setIndex(i);
   };
 
-  
+
   useEffect(() => {
     const fetchCrew = async () => {
       try {
-        const response = await fetch("public/data.json");
+        const response = await fetch("/data.json");
         const fetchdata = await response.json();
         setData(fetchdata.crew);
       } catch (error) {
