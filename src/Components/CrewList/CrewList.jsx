@@ -12,7 +12,7 @@ function CrewList() {
   useEffect(() => {
     const fetchCrew = async () => {
       try {
-        const response = await fetch("src/Data/data.json");
+        const response = await fetch("public/data.json");
         const fetchdata = await response.json();
         setData(fetchdata.crew);
       } catch (error) {
@@ -33,7 +33,7 @@ function CrewList() {
 
   return (
     <>
-      {data ? (<div className="Loading">Loading...</div>) :(
+      {!data ? (<div className="Loading">Loading...</div>) :(
         <div className="crew-main-container">
           <div className="crew-details">
             <p className="crew-role">{data[index]?.crew_role}</p>

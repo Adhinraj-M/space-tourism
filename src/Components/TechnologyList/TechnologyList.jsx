@@ -8,7 +8,7 @@ function TechnologyList() {
   useEffect(() => {
     async function DataFetching() {
       try {
-        const response = await fetch("src/Data/data.json");
+        const response = await fetch("public/data.json");
         const data = await response.json();
         setData(data.technology);
       } catch (error) {
