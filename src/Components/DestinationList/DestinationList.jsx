@@ -34,7 +34,9 @@ function DestinationList() {
 
   return (
     <>
-      {!data ? (<div className="Loading">Loading...</div>): (
+      {!data ? (
+        <div className="Loading">Loading...</div>
+      ) : (
         <div className="destination">
           <div className="destination-img-container">
             <img
