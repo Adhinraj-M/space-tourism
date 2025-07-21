@@ -9,6 +9,7 @@ function CrewList() {
     setIndex(i);
   };
 
+  
   useEffect(() => {
     const fetchCrew = async () => {
       try {
