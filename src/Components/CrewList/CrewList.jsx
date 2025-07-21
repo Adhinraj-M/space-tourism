@@ -33,7 +33,7 @@ function CrewList() {
 
   return (
     <>
-      {!data ?(<div className="Loading">Loading...</div>) :(
+      {data &&(
         <div className="crew-main-container">
           <div className="crew-details">
             <p className="crew-role">{data[index]?.crew_role}</p>
